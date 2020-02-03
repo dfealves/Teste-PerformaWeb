@@ -1,0 +1,196 @@
+* {
+  padding: 0;
+  margin: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+*:focus {
+  outline: 0;
+}
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+  font-family: "Ubuntu", sans-serif;
+}
+
+header#main {
+  height: 80px;
+  position: relative;
+  z-index: 1;
+}
+
+header#main input {
+  width: 450px;
+  border: none;
+  border-bottom: solid 1px #828282;
+}
+header#main span {
+  margin-left: 15px;
+}
+header#main p {
+  margin-left: 15px;
+  padding-left: 8px;
+  border-left: 2px solid #828282;
+}
+
+header#main .content {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 100%;
+  flex-wrap: wrap;
+}
+
+header#main .content nav {
+  display: flex;
+}
+header#main .content nav ul {
+  display: flex;
+  list-style: none;
+}
+
+header#main .content nav ul li {
+  display: flex;
+  align-items: center;
+}
+
+header#main nav ul li:first-child {
+  margin: 0;
+}
+
+header#main .content .side {
+  display: flex;
+}
+
+/* fim nav */
+
+div.container {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 0 20px;
+  align-items: center;
+  background: #001f3f;
+  width: 100%;
+  height: auto;
+  height: 410px;
+  color: #fff;
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 25px;
+  flex-wrap: wrap;
+}
+
+div.container div.selecionar {
+  position: static;
+  display: flex;
+  justify-content: center;
+
+  flex-direction: column;
+}
+div.container h2.title-h2 {
+  margin-bottom: 30px;
+}
+
+select {
+  width: 283px;
+  height: 28px;
+  margin: 10px;
+  background: #fff;
+}
+
+select#estados {
+  margin-left: 20px;
+}
+
+div.container div.exibeImagem {
+  position: relative;
+
+  display: flex;
+  justify-content: right;
+}
+div.container div.exibeImagem img {
+  max-width: 544px;
+  max-height: 410px;
+  margin: 0;
+  align-self: center;
+}
+
+/* fim container */
+
+/* produtos */
+div.produtos {
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  max-width: 1100px;
+  margin: 0 auto;
+  overflow: auto;
+}
+h3 {
+  margin-top: 15px;
+}
+
+div.item-produto {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+div.item-produto .item {
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 10px;
+}
+
+div.item-produto .item:hover {
+  border: 1px solid #e0e0e0;
+}
+
+div.item-produto .item p {
+  font-family: "Ubuntu", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  color: #828282;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+}
+
+div.item-produto .item span {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  color: #39cccc;
+  text-align: center;
+}
+
+div.item-produto .item .btn-comprar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  width: 125.28px;
+  height: 32.42px;
+  background: #39cccc;
+  border-radius: 5px;
+  border: 0;
+}
+
+div.item-produto .item img {
+  width: 180px;
+  height: 150px;
+  margin-bottom: 40px;
+}
+
+div.item-produto .item div {
+  margin: 0 auto;
+  text-align: center;
+}
