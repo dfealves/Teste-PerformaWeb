@@ -84,17 +84,19 @@ window.onload = () => {
   };
 };
 
-function exibeButton() {
-  const divItem = document.querySelector(".item");
-  const btnComprar = document.createElement("button");
+const botao = document.querySelector("#btn-comprar");
+botao.addEventListener("click", adicionaCarrinho);
+const countCarrinho = document.querySelector(".countCart");
 
-  btnComprar.setAttribute("class", "btn-comprar");
-  btnComprar.innerHTML = "COMPRAR";
+function adicionaCarrinho() {
+  const STORAGE_KEY = "CARRINHO";
+  const carrinho = localStorage.getItem(STORAGE_KEY);
 
-  iconComprar = document.createElement("i");
-  iconComprar.setAttribute("class", "material-icons");
-  iconComprar.innerHTML = "add_shopping_cart";
-
-  divItem.appendChild(btnComprar);
-  btnComprar.appendChild(iconComprar);
+  if (carrinho) {
+    localStorage.setItem(STORAGE_KEY, parseInt(carrinho) + 1);
+    countCarrinho.style.display = "block";
+    countCarrinho.innerHTML = parseInt(carrinho);
+  } else {
+    localStorage.setItem(STORAGE_KEY, 0);
+  }
 }

@@ -23,8 +23,11 @@
       </nav>
       <input type="text" name="" placeholder="O que esta procurando" id="" />
       <div class="side">
-        <span>icon</span>
-        <p>minha conta</p>
+        <i><img src="assets/icons/icon-cart.svg" alt=""/></i>
+        <span class="countCart"></span>
+        <p>
+          <i><img src="assets/icons/user-icon.svg" alt=""/></i> minha conta
+        </p>
       </div>
     </div>
   </header>
@@ -54,62 +57,111 @@
 
     <div class="produtos">
       <h3>Produtos</h3>
+      <div class="border"></div>
 
-      <div class="item-produto" onmouseover="exibeButton()">
+      <div class="item-produto">
         <div class="item">
           <img src="assets/Layer 4.png" alt="Tênis preto" />
           <div>
-            <p>TÊNIS COURO felino R698 Q4 V2</p>
+            <p>TÊNIS COURO felino R698 Q4</p>
             <p><s>de R$599,99</s></p>
             <span>por R$399,99</span>
           </div>
           <p>ou em 3x de 133,00</p>
-
-          <!-- <button class="btn-comprar">
+          <button
+            id="btn-comprar"
+            class="btn-comprar"
+            onclick="adicionaCarrinho()"
+          >
             <i class="material-icons">
               add_shopping_cart
             </i>
             COMPRAR
-          </button> -->
+          </button>
         </div>
         <div class="item">
-          <img src="assets/Layer 4.png" alt="Tênis preto" />
-          <div>
-            <p>TÊNIS COURO felino R698 Q4 V2</p>
-            <p><s>de R$599,99</s></p>
-            <span>por R$399,99</span>
-            <p>ou em 3x de 133,00</p>
+          <div class="desconto">
+            <span id="off">OFF</span>
           </div>
-        </div>
-        <div class="item">
           <img src="assets/Layer 4.png" alt="Tênis preto" />
           <div>
-            <p>TÊNIS COURO felino R698 Q4 V2</p>
+            <p>TÊNIS COURO felino R698 Q4</p>
             <p><s>de R$599,99</s></p>
             <span>por R$399,99</span>
           </div>
           <p>ou em 3x de 133,00</p>
+          <button id="btn-comprar" class="btn-comprar">
+            <i class="material-icons">
+              add_shopping_cart
+            </i>
+            COMPRAR
+          </button>
         </div>
         <div class="item">
           <img src="assets/Layer 4.png" alt="Tênis preto" />
           <div>
-            <p>TÊNIS COURO felino R698 Q4 V2</p>
+            <p>TÊNIS COURO felino R698 Q4</p>
             <p><s>de R$599,99</s></p>
             <span>por R$399,99</span>
           </div>
           <p>ou em 3x de 133,00</p>
+          <button id="btn-comprar" class="btn-comprar">
+            <i class="material-icons">
+              add_shopping_cart
+            </i>
+            COMPRAR
+          </button>
         </div>
-        <!-- <div class="item">
+        <div class="item">
           <img src="assets/Layer 4.png" alt="Tênis preto" />
           <div>
-            <p>TÊNIS COURO felino R698 Q4 V2</p>
+            <p>TÊNIS COURO felino R698 Q4</p>
             <p><s>de R$599,99</s></p>
             <span>por R$399,99</span>
           </div>
           <p>ou em 3x de 133,00</p>
-        </div> -->
+          <button id="btn-comprar" class="btn-comprar">
+            <i class="material-icons">
+              add_shopping_cart
+            </i>
+            COMPRAR
+          </button>
+        </div>
       </div>
     </div>
+    <footer>
+      <div class="container-footer">
+        <div class="contato">
+          <h3 class="h3-footer">Localização</h3>
+          <div class="border"></div>
+          <div class="endereco">
+            <h3>São Paulo</h3>
+            <p>
+              Av. das Nações Unidas, 11857 - Sala 72 <br />
+              Cidade Monções - SP 04578-908 <br />
+              +55 11 3059 2950
+            </p>
+          </div>
+        </div>
+        <div class="btn-footer">
+          <button class="btn-faleConosco">
+            <img src="assets/icons/btn-faleConosco.svg" alt="" /> ENTRE EM
+            CONTATO
+          </button>
+          <button class="btn-faleConsultor">
+            <img src="assets/icons/btn-faleConsultores.svg" alt="" /> FALE COM
+            NOSSO <br />CONSULTOR ONLINE
+          </button>
+        </div>
+        <div class="powered">
+          <div class="logo-footer">
+            <img src="assets/logo-white.svg" alt="" />
+            <img src="assets/icon-powered.svg" alt="" />
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="aboveFooter"></div>
     <script src="./js/main.js"></script>
     <script
       src="https://kit.fontawesome.com/3aafd6d8fa.js"
